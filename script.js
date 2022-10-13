@@ -63,9 +63,8 @@ let msg = `hi hello all
 console.log(msg);
 
 //date object
-let date = Date();
-let nowDate = new Date();
+let date = Date(); //string form
+let nowDate = new Date("feb 18 2000"); // object form
 
 console.log(date);
-
-console.log(nowDate.getDay());
+console.log(nowDate.getFullYear());
