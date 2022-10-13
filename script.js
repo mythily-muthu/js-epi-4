@@ -86,8 +86,16 @@ console.log(number);
 number.unshift(2);
 console.log(number);
 
+//unshift (remove in front)
+number.shift();
+console.log(number);
+
 //splice (add in the middle) (index, dlt count, replace)
 number.splice(0, 1, 3);
+console.log(number);
+
+//removing an element in an array..
+number.pop(); //using pop , the last number is dltd
 console.log(number);
 
 //finding an element in an array (PRIMITIVE TYPES..)
@@ -129,3 +137,16 @@ console.log(result2);*/
 
 let result2 = veggies.find((veggie) => veggie.item2 === "tomato");
 console.log(result2); //modern call back function code
+
+//emptying an array in js
+let numbers = [1, 2, 3, 4];
+
+let anotherNumber = number;
+
+//numbers = []; //solution 1
+
+console.log(numbers);
+console.log(anotherNumber);
+
+numbers.length = 0; //soln 2
+console.log(numbers);
