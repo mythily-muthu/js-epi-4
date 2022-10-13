@@ -39,6 +39,7 @@ let name1 = "muthu";
 let name2 = "mani kandan ";
 
 /* 
+OBJECT / VARIABLE NAME + functions + (contents)
 .concat 
 .includes
 .startswith
@@ -68,3 +69,23 @@ let nowDate = new Date("feb 18 2000"); // object form
 
 console.log(date);
 console.log(nowDate.getFullYear());
+
+//adding an element to an array..
+
+let number = [4, 5, 6];
+
+console.log(number[1]);
+
+number[3] = 7; //adding a number to an object
+
+//push (add at end)
+number.push(8);
+console.log(number);
+
+//unshift (add at front)
+number.unshift(2);
+console.log(number);
+
+//splice (add in the middle) (index, dlt count, replace)
+number.splice(0, 1, 3);
+console.log(number);
