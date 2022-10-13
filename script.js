@@ -63,4 +63,9 @@ let msg = `hi hello all
 console.log(msg);
 
 //date object
-let;
+let date = Date();
+let nowDate = new Date();
+
+console.log(date);
+
+console.log(nowDate.getDay());
