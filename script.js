@@ -89,3 +89,9 @@ console.log(number);
 //splice (add in the middle) (index, dlt count, replace)
 number.splice(0, 1, 3);
 console.log(number);
+
+//finding an element in an array
+let cart = ["apple", "orange", "mango"];
+console.log(cart.indexOf("apple") !== -1);
+
+console.log(cart.includes("apple")); //.includes
