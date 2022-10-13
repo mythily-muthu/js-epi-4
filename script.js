@@ -90,8 +90,42 @@ console.log(number);
 number.splice(0, 1, 3);
 console.log(number);
 
-//finding an element in an array
-let cart = ["apple", "orange", "mango"];
-console.log(cart.indexOf("apple") !== -1);
+//finding an element in an array (PRIMITIVE TYPES..)
 
+let cart = ["apple", "orange", "mango"];
+
+console.log(cart.indexOf("apple") !== -1);
 console.log(cart.includes("apple")); //.includes
+
+//finding an element in an array (REFERENCE TYPES..) => (find) method)
+
+let orders = [
+  //array of objects
+  { id: 1, item: "smartphones", quantity: 1 },
+  { id: 2, item: "laptop", quantity: 1 },
+  { id: 3, item: "maggi", quantity: 1 },
+  { id: 4, item: "iphone", quantity: 1 },
+];
+
+let result1 = orders.findIndex(function (order) {
+  //call back function
+  return order.item === "maggi";
+});
+console.log(result1);
+
+//exercise
+
+let veggies = [
+  { no: 1, item1: "onion", quantity: 1 },
+  { no: 2, item2: "tomato", quantity: 1 },
+  { no: 3, item3: "ladies finger", quantity: 1 },
+];
+/*
+(old style of coding..)
+let result2 = veggies.find(function (veggie) {
+  return veggie.item2 === "tomato";
+});
+console.log(result2);*/
+
+let result2 = veggies.find((veggie) => veggie.item2 === "tomato");
+console.log(result2); //modern call back function code
