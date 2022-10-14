@@ -163,5 +163,16 @@ let cart_2 = ["matchbox", "salt"];
 let total_cart = [...cart_1, ...cart_2];
 console.log(total_cart);
 
-let carts_2 = cart_2.join("'s ");
+let carts_2 = cart_2.join("'s "); //.join
 console.log(carts_2);
+
+//split
+
+let fullName = "Mythily Palanisamy";
+
+let name = fullName.split(" ");
+
+let firstName = name[0];
+let lastName = name[1];
+
+console.log(`Hi my firstname is ${firstName} and my lastname is ${lastName}`);
