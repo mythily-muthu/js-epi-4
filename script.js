@@ -53,6 +53,9 @@ OBJECT / VARIABLE NAME + functions + (contents)
 .trimstart
 .trimend
 .join
+.split
+.slug
+.sort
 
 escape notations
 new line => \n
@@ -182,3 +185,5 @@ console.log(`Hi my firstname is ${firstName} and my lastname is ${lastName}`);
 
 let username = name.join("_");
 console.log(username);
+
+//sort
