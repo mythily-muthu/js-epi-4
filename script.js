@@ -187,3 +187,11 @@ let username = name.join("_");
 console.log(username);
 
 //sort
+
+let numbers1 = [1, 2, 3, 4, 7, 6]; //decending order
+
+numbers1.sort((a, b) => {
+  return b - a;
+});
+
+console.log(numbers1);
