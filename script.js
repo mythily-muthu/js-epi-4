@@ -50,8 +50,9 @@ OBJECT / VARIABLE NAME + functions + (contents)
 .touppercase
 .tolowercase
 .trim
-.trinstart
-/trimend
+.trimstart
+.trimend
+.join
 
 escape notations
 new line => \n
@@ -124,9 +125,9 @@ console.log(result1);
 //exercise
 
 let veggies = [
-  { no: 1, item1: "onion", quantity: 1 },
-  { no: 2, item2: "tomato", quantity: 1 },
-  { no: 3, item3: "ladies finger", quantity: 1 },
+  { no: 1, item: "onion", quantity: 1 },
+  { no: 2, item: "tomato", quantity: 1 },
+  { no: 3, item: "ladies finger", quantity: 1 },
 ];
 /*
 (old style of coding..)
@@ -135,7 +136,7 @@ let result2 = veggies.find(function (veggie) {
 });
 console.log(result2);*/
 
-let result2 = veggies.find((veggie) => veggie.item2 === "tomato");
+let result2 = veggies.find((veggie) => veggie.item === "tomato");
 console.log(result2); //modern call back function code
 
 //emptying an array in js
@@ -150,3 +151,17 @@ console.log(anotherNumber);
 
 numbers.length = 0; //soln 2
 console.log(numbers);
+
+//soln 3 => splice
+numbers.slice(3);
+
+//combining two arrays.
+
+let cart_1 = ["maggie", "beans", "masala"];
+let cart_2 = ["matchbox", "salt"];
+
+let total_cart = [...cart_1, ...cart_2];
+console.log(total_cart);
+
+let carts_2 = cart_2.join("'s ");
+console.log(carts_2);
