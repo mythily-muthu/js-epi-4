@@ -171,8 +171,14 @@ console.log(carts_2);
 let fullName = "Mythily Palanisamy";
 
 let name = fullName.split(" ");
-
+/*
 let firstName = name[0];
 let lastName = name[1];
 
 console.log(`Hi my firstname is ${firstName} and my lastname is ${lastName}`);
+*/
+
+//slug (- , _)
+
+let username = name.join("_");
+console.log(username);
