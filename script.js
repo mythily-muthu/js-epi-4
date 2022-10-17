@@ -56,6 +56,7 @@ OBJECT / VARIABLE NAME + functions + (contents)
 .split
 .slug
 .sort
+.reverse
 
 escape notations
 new line => \n
@@ -193,5 +194,28 @@ let numbers1 = [1, 2, 3, 4, 7, 6]; //decending order
 numbers1.sort((a, b) => {
   return b - a;
 });
-
 console.log(numbers1);
+
+//
+let students = [
+  //array of objects
+  { id: 1, name: "Shiva" },
+  { id: 2, name: "Mani" },
+  { id: 3, name: "Gow" },
+  { id: 4, name: "Freak" },
+];
+students.sort((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+});
+console.log(students);
+
+// every(), some()
+let thenumbers = [1, 2, 3, 4, 5, 6];
+
+let evenNum = thenumbers.every(function (value) {
+  return value % 2 === 0;
+});
+
+console.log(evenNum);
