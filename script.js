@@ -219,3 +219,7 @@ let evenNum = thenumbers.every(function (value) {
 });
 
 console.log(evenNum);
+
+//find - first occurance
+//findIndex- gives the index of first occurance
+//filter -  retuns an array of objects that satisfied
